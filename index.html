@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>💕 Pentru Izabella 💕</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <section id="page-password" class="page active">
+        <div class="hello-kitty hk-top-right" aria-hidden="true"></div>
+        <div class="page-content">
+            <div class="liquid-glass password-card">
+                <div class="hello-kitty hk-card" aria-hidden="true"></div>
+                <h1 class="title-anim">🔒</h1>
+                <p class="subtitle-anim">Introdu parola secreta ca sa continui...</p>
+                <div class="input-wrapper">
+                    <input 
+                        type="password" 
+                        id="password-input" 
+                        class="liquid-glass-input" 
+                        placeholder="parola ta secreta..." 
+                        autocomplete="off"
+                        spellcheck="false"
+                    >
+                    <div class="input-heart" aria-hidden="true">💗</div>
+                </div>
+                <p id="password-error" class="error-text hidden">hmm... incearca din nou 🥺</p>
+                <p class="hint-text subtitle-anim">hint: ce iti spun foarte des? 💕</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-welcome" class="page">
+        <div class="hello-kitty hk-top-left" aria-hidden="true"></div>
+        <div class="page-content">
+            <div class="flower-container flower-left" aria-hidden="true">
+                <div class="rose" id="rose-left"></div>
+            </div>
+            <div class="flower-container flower-right" aria-hidden="true">
+                <div class="rose" id="rose-right"></div>
+            </div>
+            <div class="welcome-content">
+                <h1 class="welcome-title title-anim">
+                    Buna <span class="name-highlight">Izabella</span>! 💕
+                </h1>
+                <p class="welcome-sub subtitle-anim">
+                    De la <span class="date-highlight">12 ianuarie 2024</span>, imi faci fiecare zi sa aibe sens.
+                </p>
+                <div class="heart-divider" aria-hidden="true">
+                    <span>♥</span><span>♥</span><span>♥</span>
+                </div>
+                <p class="welcome-message subtitle-anim">
+                    Am pregatit ceva mai special pentru tine 🌹
+                </p>
+                <p class="tap-hint subtitle-anim">apasa oriunde ca sa continui ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-question" class="page">
+        <div class="hello-kitty hk-top-right hk-small" aria-hidden="true"></div>
+        <div class="page-content">
+            <div class="flower-container flower-top-left" aria-hidden="true">
+                <div class="rose rose-small" id="rose-q1"></div>
+            </div>
+            <div class="flower-container flower-top-right" aria-hidden="true">
+                <div class="rose rose-small" id="rose-q2"></div>
+            </div>
+            <div class="flower-container flower-bottom-left" aria-hidden="true">
+                <div class="rose rose-small" id="rose-q3"></div>
+            </div>
+            <div class="flower-container flower-bottom-right" aria-hidden="true">
+                <div class="rose rose-small" id="rose-q4"></div>
+            </div>
+
+            <div class="question-content">
+                <h1 class="question-title title-anim">
+                    Do you wanna be my Valentine? 
+                </h1>
+                <div class="buttons-wrapper">
+                    <button id="btn-yes" class="liquid-glass btn-valentine btn-yes">
+                        Da, vreau! 💕
+                    </button>
+                    <button id="btn-no" class="liquid-glass btn-valentine btn-no">
+                        Nu 😤
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-celebrate" class="page">
+        <div class="hello-kitty hk-top-left" aria-hidden="true"></div>
+        <div class="hello-kitty hk-bottom-right" aria-hidden="true"></div>
+        <div class="page-content">
+            <div class="flower-container flower-left" aria-hidden="true">
+                <div class="rose" id="rose-c-left"></div>
+            </div>
+            <div class="flower-container flower-right" aria-hidden="true">
+                <div class="rose" id="rose-c-right"></div>
+            </div>
+
+            <div class="celebrate-content">
+                <div class="big-heart-anim" aria-hidden="true">💖</div>
+                <h1 class="celebrate-title title-anim">Stiam! 🥰</h1>
+                <div class="liquid-glass celebrate-card">
+                    <p class="celebrate-message">
+                        Te iubesc, abia astept sa vezi ce ti-am mai pregatit pentru acest Valentine's Day! 💕🌹
+                    </p>
+                </div>
+                <div class="heart-rain" aria-hidden="true"></div>
+                <p class="celebrate-footer subtitle-anim">
+                    Te iubesc mult Izabella ♥
+                </p>
+                <p class="days-together subtitle-anim" id="days-counter"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/characters.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/flowers.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
